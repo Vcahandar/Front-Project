@@ -1,0 +1,18 @@
+.myNavbar .navbarUp {
+  background: #222 !important;
+  height: 64px;
+}
+.myNavbar .navbarUp .navbar-nav .dropdown {
+  display: flex;
+  margin-left: 22px;
+  padding: 5px;
+}
+.myNavbar .navbarUp .navbar-nav .dropdown .usd {
+  font-weight: 700;
+  color: #c3c3c3;
+  font-size: 14px;
+}
+.myNavbar .navbarUp .navbar-nav .dropdown .dropdown-menu {
+  width: 221px;
+  border-top: 4px solid #c3c3c3 !important;
+}/*# sourceMappingURL=home.css.map */
