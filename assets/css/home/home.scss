@@ -73,7 +73,7 @@
                 display: flex;
                 gap: 12px;
 
-                .nav-link {}
+
 
                 a {
                     font-weight: 600;
@@ -667,15 +667,12 @@
 
     .container {
         max-width: 100% !important;
-
     }
 
 
     .banners {
-
         display: flex;
         gap: 40px;
-
 
         .left-banner {
             width: 50%;
@@ -738,7 +735,7 @@
                     height: 150px;
 
                     .text {
-                        padding: 5px 35px;
+                        padding: 10px 106px 3px 19px;
 
                         h4 {
                             font-weight: 700;
@@ -833,19 +830,225 @@
                         }
                     }
 
-
-
-
-
-
                 }
             }
-
-
-
-
 
         }
 
     }
+}
+
+
+
+#featured-product {
+    margin-top: 50px;
+
+    .container {
+        max-width: 100% !important;
+
+    }
+
+    .carts {
+        display: flex;
+
+        .cart1 {
+
+            width: 100%;
+
+            h4 {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 0.0625rem;
+                    bottom: -0.65625rem;
+                    background-color: #f6f6f6;
+                }
+
+                &:after {
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    width: 2.5rem;
+                    height: 0.125rem;
+                    background-color: #222;
+                    bottom: -0.6875rem;
+                }
+            }
+        }
+
+        .img-text {
+            display: flex;
+
+            .img {
+                margin-top: 10px;
+
+                img {
+                    height: 90px;
+                    width: 90px;
+                    background-color: #F5F5F5;
+                }
+            }
+
+            .texts {
+
+                .text1 {
+                    a {
+                        text-decoration: none;
+
+                        p {
+                            margin-top: 6px;
+                            margin-left: 10px;
+                            font-weight: bold;
+                            margin-bottom: 3px;
+                            color: black;
+                        }
+                    }
+                }
+
+                .icons {
+                    margin-left: 10px;
+                    display: flex;
+                    font-size: 12px;
+                }
+
+                .text2 {
+
+                    p {
+                        margin-left: 10px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+#footer {
+
+    width: 100%;
+    background-color: #f7f7f7;
+
+    .container {
+        max-width: 100% !important;
+
+    }
+
+
+    .frst-box {
+        padding: 48px 27px;
+        height: 350px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+
+            p {
+                line-height: 0.5;
+            }
+        }
+    }
+
+
+    .scnd-box {
+        height: 350px;
+        padding: 48px 27px;
+
+        .info {
+            font-size: 14px;
+            margin-left: -31px;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+
+
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .third-box {
+        padding: 48px 27px;
+        height: 350px;
+        input {
+            width: 270px;
+            height: 45px;
+            border-radius: 3px;
+            padding: 0 40px 0 18px;
+            border: 1px solid #e2e2e2;
+        }
+
+        button {
+            height: 45px;
+            color: white;
+            width: 100%;
+            margin-top: 45px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 3px;
+            background-color: #ef6c00;
+
+        }
+
+    }
+
+    .fourth-box{
+        padding: 48px 21px;
+        height: 350px;
+        .sosial-tags{
+            margin-top: 35px;
+            display: flex;
+            gap: 10px  ;
+            
+            ul{
+                width: 35px;
+                padding: 4px 10px;
+                height: 35px;
+                border: 1px solid;
+                border-radius: 50%; 
+            }
+
+            li{
+                list-style: none;
+                
+                a{
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+
+
+    
+            
+        }
+
+
+    }
+
+
+
 }

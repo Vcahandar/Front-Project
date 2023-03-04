@@ -14,9 +14,44 @@ eur.addEventListener("click",function(){
     document.querySelector(".usd").innerText="EUR"
 })
 
-// ---language------------
-  // tab-slider
+// ----language-------
+
+// let lenguage=document.querySelector(".laguage")
+
+// let grm=document.querySelector(".grm")
+
+// grm.addEventListener("click",function(){
+
+// })   
+
+
+
+
+
+
+
+
+//=---------------------- slider-------------
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   
+// ----------------------
 
 
 
