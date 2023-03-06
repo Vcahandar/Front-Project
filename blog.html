@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="./assets/img/Home/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
 
-
-    <link rel="stylesheet" href="./assets/css/myAccount/myAccount.css">
-    <title>Account</title>
+    <link rel="stylesheet" href="./assets/css/blog/blog.css">
+    <title>Blog</title>
 </head>
-
 <body>
+
     <header>
         <section id="myNavbar">
             <nav class="navbar navbar-expand-lg bg-body-tertiary navbarUp ">
@@ -63,11 +61,13 @@
                                     <i class="fa-regular fa-heart"></i> WISHLIST</a>
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-rotate"></i>COMPARE</a>
-                                <a class="nav-link acount" aria-current="page" href="#"><i
+                                <a class="nav-link acount" aria-current="page" href="./myAccount.html"><i
                                         class="fa-solid fa-user"></i>My Account</a>
                             </li>
                     </div>
             </nav>
+
+
 
             <div class="navDown">
                 <div class="container">
@@ -102,6 +102,11 @@
                                     <button class="btn btn-primary button-icon">
                                         <div class="icon-cart">
                                             <i class="fa-solid fa-cart-shopping"></i>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item usd-frst " href="#"><span>USD</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item eur" href="#"><span>EUR</span></a></li>
+                                            </ul>
                                         </div>
 
                                         <div class="count-price">
@@ -112,8 +117,12 @@
                                             <div class="price-class">
                                                 <span>$0.00</span>
                                             </div>
+
                                         </div>
+
                                     </button>
+
+
 
                                 </div>
                             </div>
@@ -134,7 +143,7 @@
                                         <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">CONTACT</a>
+                                        <a class="nav-link" href="./contact.html">CONTACT</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="./about.html">ABOUT</a>
@@ -171,13 +180,13 @@
                 <div class="container">
                     <div class="navAbout">
                         <div class="left">
-                            <h4>MY ACCOUNT</h4>
+                            <h4>CONTACT</h4>
                         </div>
                         <div class="right">
                             <a href="./home.html">
                                 <h4>HOME </h4>
                             </a>
-                            <h4> / My Account</h4>
+                            <h4> / Contact</h4>
                         </div>
                     </div>
                 </div>
@@ -185,80 +194,225 @@
         </section>
     </header>
 
+
     <main>
-        <section id="myAccount">
+        <section id="img-text">
             <div class="container">
-                <div class="panel">
-                    <div class="login">
-                        <div class="title">
-                            <h3>Login</h3>
-
-                        </div>
-                        <div class="form">
-                            <form>
-
-                                <div class="group">
-                                    <input type="email" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Username or email address (required)*</label>
-                                </div>
-
-                                <div class="group">
-                                    <input type="password" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Password (required)*</label>
-                                </div>
-
-                            </form>
-                        </div>
-                        <div class="login-btn">
-                            <button class="btn btn-warning">Log in</button>
-                        </div>
-
-                    </div>
-                    <div class="register">
-
-                        <div class="title">
-                            <h3>Register</h3>
-                            <hr>
-                            <hr class="last-hr">
-
-                        </div>
-                        <div class="form-body">
-                            <p>Create new account today to reap the benefits of a personalized shopping experience.</p>
-                            <div class="form">
-                                <form>
-                                    <div class="group">
-                                        <input type="email" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Username or email address (required)*</label>
-                                    </div>
-
-                                </form>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="textss1">
+                            <div class="img1">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
                             </div>
 
-                            <p>Your personal data will be used to support your experience throughout this website, to
-                                manage access to your account, and for other purposes described in our privacy policy.
-                            </p>
-
-
+                        </div>
+                        <div class="textss2">
+                            <div class="img2">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
+                            </div>
 
                         </div>
+                        <div class="textss3">
+                            <div class="img3">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="texts1">
+                            <div class="text1">
+                                <p>Our Outstanding Services</p>
+                            </div>
+                            <div class="text-icon">
+                                <div class="icon1">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>Aug 21, 2015</p>
+                                </div>
+                                <div class="icon2">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p> Marc Spenser</p>
+                                </div>
+                                <div class="icon3">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <p>05 Comments</p>
+                                </div>
+                            </div>
+                            <div class="text2">
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance,
+                                    business
+                                    orci ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.</p>
+                            </div>
+                        </div>
 
-                        <div class="login-btn">
-                            <button class="btn btn-warning">Register</button>
+                        <div class="texts2">
+                            <div class="text1">
+                                <p>Our Outstanding Services</p>
+                            </div>
+                            <div class="text-icon">
+                                <div class="icon1">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>Aug 21, 2015</p>
+                                </div>
+                                <div class="icon2">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p> Marc Spenser</p>
+                                </div>
+                                <div class="icon3">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <p>05 Comments</p>
+                                </div>
+                            </div>
+                            <div class="text2">
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance,
+                                    business
+                                    orci ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="texts3">
+                            <div class="text1">
+                                <p>Our Outstanding Services</p>
+                            </div>
+                            <div class="text-icon">
+                                <div class="icon1">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>Aug 21, 2015</p>
+                                </div>
+                                <div class="icon2">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p> Marc Spenser</p>
+                                </div>
+                                <div class="icon3">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <p>05 Comments</p>
+                                </div>
+                            </div>
+                            <div class="text2">
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance,
+                                    business
+                                    orci ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.</p>
+                            </div>
                         </div>
 
                     </div>
+
+
+
+
+
+
+                    <div class="col-4">
+
+                        <div class="search-icon">
+
+                            <div class="search">
+                                <input type="text" placeholder="  Search">
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="latest">
+                            <h4>LATEST NEWS</h4>
+                        </div>
+
+                        <div class="img-texts">
+                            <div class="img">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <a href=""><p>What Makes A Financial</p></a>
+                                <a href=""><p>Service’s Website Successful?
+                                </p></a>
+                                <p>02 Dec.</p>
+                            </div>
+                        </div>
+
+                        <div class="img-texts">
+                            <div class="img">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <a href=""><p>What Makes A Financial</p></a>
+                                <a href=""><p>Service’s Website Successful?
+                                </p></a>
+                                <p>02 Dec.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="img-texts">
+                            <div class="img">
+                                <img src="./assets/img/Home/blog1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <a href=""><p>What Makes A Financial</p></a>
+                                <a href=""><p>Service’s Website Successful?
+                                </p></a>
+                                
+                                <p>02 Dec.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-widget">
+                            <h4>TEXT WIDGET</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore que
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch
+                                itecto beatae vitae dict eaque ipsa quae.</p>
+                        </div>
+
+                        <div class="tags-widget">
+                            <h4>TAGS WIDGET</h4>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="button1">
+                                <div class="b1">
+                                    <button><span>INSURANCE</span></button>
+                                </div>
+                                <div class="b2">
+                                    <button><span>INVESTMENTS</span></button>
+                                </div>
+
+
+                            </div>
+                            <div class="button2">
+                                <div class="b1">
+                                    <button><span>TAX PLANS</span></button>
+                                </div>
+                                <div class="b2">
+                                    <button><span>MUTUAL FUNDS</span></button>
+                                </div>
+                            </div>
+                            <div class="button3">
+                                <div class="b1">
+                                    <button><span>Retirement plans</span></button>
+                                </div>
+                                <div class="b2">
+                                    <button><span>Busniess plans</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
             </div>
         </section>
     </main>
 
-
+    
 
 
 
@@ -376,18 +530,8 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
     </footer>
-
-
-
-
-
-
-
-
 
 
     <script src="https://kit.fontawesome.com/b01bc4ce26.js" crossorigin="anonymous"></script>
@@ -397,7 +541,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/myAccount.js"></script>
+    <script src="./assets/js/blog.js"></script>
 </body>
-
 </html>
