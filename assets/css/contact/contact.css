@@ -216,8 +216,9 @@
   max-width: 1300px;
 }
 #main .container .main-map {
+  margin-top: 35px;
   padding: 20px;
-  background-color: #c3c3c3;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #main .container .main-map iframe {
   width: 100%;
@@ -225,10 +226,18 @@
 #main .container .main-map .title-text {
   display: flex;
   gap: 15px;
+  margin-top: 30px;
 }
 #main .container .main-map .title-text .left-text {
-  background-color: wheat;
   width: 50%;
+}
+#main .container .main-map .title-text .left-text .icon-text {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+#main .container .main-map .title-text .left-text .icon-text .content {
+  margin-left: 20px;
 }
 #main .container .main-map .title-text .left-text .icon-text i {
   font-size: 30px;
@@ -236,6 +245,10 @@
 }
 #main .container .main-map .title-text .left-text .icon-text .text {
   line-height: 0.5;
+}
+#main .container .main-map .title-text .left-text .icon-text .text hr {
+  width: 510px;
+  margin-left: -65px;
 }
 #main .container .main-map .title-text .left-text .icon-text .text h4 {
   font-size: 20px;
@@ -264,31 +277,54 @@
   position: relative;
   margin-bottom: 45px;
 }
-#main .container .main-map .title-text .right-text .title-form .form input {
+#main .container .main-map .title-text .right-text .title-form .form input,
+#main .container .main-map .title-text .right-text .title-form .form textarea {
   font-size: 15px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
   border: none;
   border-bottom: 1px solid #ef6c00;
+  outline: none;
+}
+#main .container .main-map .title-text .right-text .title-form .form input:focus ~ label, #main .container .main-map .title-text .right-text .title-form .form input:valid ~ label,
+#main .container .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
+#main .container .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
+  top: -8px;
+  font-size: 10px;
+}
+#main .container .main-map .title-text .right-text .title-form .form input:focus ~ .bar::before, #main .container .main-map .title-text .right-text .title-form .form input:focus ~ .bar::after,
+#main .container .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::before,
+#main .container .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::after {
+  width: 50%;
 }
 #main .container .main-map .title-text .right-text .title-form .form input:focus {
   outline: none;
 }
+#main .container .main-map .title-text .right-text .title-form .form .textarea {
+  height: 110px;
+  padding: 10px 0 0 5px;
+  resize: none;
+}
 #main .container .main-map .title-text .right-text .title-form .form label {
   color: #999;
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 14px;
   position: absolute;
   pointer-events: none;
   left: 5px;
   top: 10px;
-  transition: 0.2s ease all;
+  transition: 0.4s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
 #main .container .main-map .title-text .right-text .title-form .form input:focus ~ label,
 #main .container .main-map .title-text .right-text .title-form .form input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #ef6c00;
+}
+#main .container .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
+#main .container .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
   top: -20px;
   font-size: 14px;
   color: #ef6c00;
@@ -340,6 +376,15 @@
     width: 0;
     background: transparent;
   }
+}
+#main .container .main-map .title-text .right-text .click-btn button {
+  border: none;
+  background-color: #ef6c00;
+  width: 110px;
+  font-size: 14px;
+  height: 50px;
+  font-weight: 700;
+  color: white;
 }
 
 #footer {

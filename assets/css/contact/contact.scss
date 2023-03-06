@@ -329,8 +329,10 @@
         max-width: 1300px;
 
         .main-map{
+            margin-top: 35px;
             padding: 20px;
-            background-color: #c3c3c3;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 
             iframe{
                 width: 100%;
@@ -339,11 +341,10 @@
             .title-text{
                 display: flex;
                 gap: 15px;
+                margin-top: 30px;
 
-                
 
                 .left-text{
-                    background-color: wheat;
                     width: 50%;
 
                     .title{
@@ -351,6 +352,14 @@
                     }
 
                     .icon-text{
+                        display: flex;
+                        gap: 15px;
+                        margin-top: 30px;
+
+                        .content{
+                            margin-left: 20px;
+                        }
+
                         i{
                             font-size: 30px;
                             color: #ef6c00;
@@ -358,6 +367,13 @@
 
                         .text{
                             line-height: 0.5;
+
+                            hr{
+                                width: 510px;
+                                margin-left: -65px;
+
+
+                            }
 
                             h4{
                                 font-size: 20px;
@@ -397,13 +413,28 @@
                                 margin-bottom: 45px;
                             }
         
-                            input {
+                            input,
+                            textarea {
                                 font-size: 15px;
                                 padding: 10px 10px 10px 5px;
                                 display: block;
                                 width: 100%;
                                 border: none;
                                 border-bottom: 1px solid #ef6c00;
+                                outline: none;
+
+
+                                &:focus~label,
+                                &:valid~label {
+                                    top: -8px;
+                                    font-size: 10px;
+                                }
+
+                                &:focus~.bar::before,
+                                &:focus~.bar::after {
+                                    width: 50%;
+                                }
+
                             }
         
                             input:focus {
@@ -411,15 +442,20 @@
                             }
         
                             /* LABEL ======================================= */
+                            .textarea {
+                                height: 110px;
+                                padding: 10px 0 0 5px;
+                                resize: none;
+                            }
+                            
                             label {
                                 color: #999;
-                                font-size: 15px;
-                                font-weight: normal;
+                                font-size: 14px;
                                 position: absolute;
                                 pointer-events: none;
                                 left: 5px;
                                 top: 10px;
-                                transition: 0.2s ease all;
+                                transition: 0.4s ease all;
                                 -moz-transition: 0.2s ease all;
                                 -webkit-transition: 0.2s ease all;
                             }
@@ -427,6 +463,13 @@
                             /* active state */
                             input:focus~label,
                             input:valid~label {
+                                top: -20px;
+                                font-size: 14px;
+                                color: #ef6c00;
+                            }
+
+                            textarea:focus~label,
+                            textarea:valid~label {
                                 top: -20px;
                                 font-size: 14px;
                                 color: #ef6c00;
@@ -519,6 +562,20 @@
                             }
                         }
                     }
+
+                    
+                .click-btn {
+
+                    button {
+                        border: none;
+                        background-color: #ef6c00;
+                        width: 110px;
+                        font-size: 14px;
+                        height: 50px;
+                        font-weight: 700;
+                        color: white;
+                    }
+                }
 
 
                 }
