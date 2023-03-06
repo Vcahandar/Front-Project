@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/css/myAccount/myAccount.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <header>
+        <section id="myNavbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary navbarUp ">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle usd" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item usd-frst " href="#"><span>USD</span></a></li>
+                                    <li><a class="dropdown-item eur" href="#"><span>EUR</span></a></li>
+                                </ul>
+
+                                <a class="nav-link dropdown-toggle language" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="flag" src="./assets/img/Home/flagGB.svg" alt=""> English
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item eng" href="#"><img class="flag"
+                                                src="./assets/img/Home/flagGB.svg" alt=""> English</a></li><br>
+                                    <li><a class="dropdown-item grm" href="#"><img class="flag"
+                                                src="./assets/img/Home/germany.svg" alt=""> Germany</a></li><br>
+                                    <li><a class="dropdown-item fr" href="#"><img class="flag"
+                                                src="./assets/img/Home/france.svg" alt=""> France</a></li><br>
+                                    <li><a class="dropdown-item" href="#"><img class="flag"
+                                                src="./assets/img/Home/russia.svg" alt=""> Russia</a></li><br>
+                                    <li><a class="dropdown-item" href="#"><img class="flag"
+                                                src="./assets/img/Home/brat.svg" alt=""> Turkey</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav-left">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item left">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <i class="fa-regular fa-heart"></i> WISHLIST</a>
+                                <a class="nav-link" aria-current="page" href="#"><i
+                                        class="fa-solid fa-rotate"></i>COMPARE</a>
+                                <a class="nav-link acount" aria-current="page" href="#"><i
+                                        class="fa-solid fa-user"></i>My Account</a>
+                            </li>
+                    </div>
+            </nav>
+
+            <div class="navDown">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="">
+                                    <img src="./assets/img/Home/logo-white.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="search">
+                                <input type="search" value="" placeholder="Type to search...">
+                                <button type="button" class="btn btn-dark">search</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="text-basket">
+                                <div class="icon-phone">
+                                    <i class="fa fa-phone"></i>
+
+                                </div>
+                                <div class="info-text">
+                                    <p>Helpline:</p>
+                                    <span>02(981)336 111</span>
+                                </div>
+
+                                <div class="basket">
+                                    <button class="btn btn-primary button-icon">
+                                        <div class="icon-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item usd-frst " href="#"><span>USD</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item eur" href="#"><span>EUR</span></a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="count-price">
+                                            <div class="count">
+                                                <span>0</span>
+                                            </div>
+
+                                            <div class="price-class">
+                                                <span>$0.00</span>
+                                            </div>
+
+                                        </div>
+
+                                    </button>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="secondNav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary nvbar">
+                        <div class="container-fluid">
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTACT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./about.html">ABOUT</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            PAGES
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="./home.html">Home</a></li>
+                                            <li><a class="dropdown-item" href="./about.html">About</a></li>
+                                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item" href="./myAccount.html">Account</a></li>
+                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                                            <li><a class="dropdown-item" href="#">Product Detail</a></li>
+                                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                            <li><a class="dropdown-item" href="#">Ckeckout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BLOG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="about-navbar">
+                <div class="container">
+                    <div class="navAbout">
+                        <div class="left">
+                            <h4>MY ACCOUNT</h4>
+                        </div>
+                        <div class="right">
+                            <a href="./home.html">
+                                <h4>HOME </h4>
+                            </a>
+                            <h4> / My Account</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="myAccount">
+            <div class="container">
+                <div class="panel">
+                    <div class="login">
+                        <div class="title">
+                            <h3>Login</h3>
+
+                        </div>
+                        <div class="form">
+                            <form>
+
+                                <div class="group">
+                                    <input type="email" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Username or email address (required)*</label>
+                                </div>
+
+                                <div class="group">
+                                    <input type="password" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Password (required)*</label>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="login-btn">
+                            <button class="btn btn-warning">Log in</button>
+                        </div>
+
+                    </div>
+                    <div class="register">
+
+                        <div class="title">
+                            <h3>Register</h3>
+                            <hr>
+                            <hr class="last-hr">
+
+                        </div>
+                        <div class="form-body">
+                            <p>Create new account today to reap the benefits of a personalized shopping experience.</p>
+                            <div class="form">
+                                <form>
+                                    <div class="group">
+                                        <input type="email" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Username or email address (required)*</label>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <p>Your personal data will be used to support your experience throughout this website, to
+                                manage access to your account, and for other purposes described in our privacy policy.
+                            </p>
+
+
+
+                        </div>
+
+                        <div class="login-btn">
+                            <button class="btn btn-warning">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="frst-box">
+                            <a href=""><img src="./assets/img/Home/logo-02-01.png" alt=""></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada fringilla sem,
+                                at dictum lectus ultricies quis. Etiam eu bibendum orci. Aliquam erat volutpat.</p>
+
+                            <a href="">
+                                <p>MORE ABOUT US</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="scnd-box">
+                            <h5>Services</h5>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="">Hotel Growth</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Hotel Loan</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Financial Planning</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Insurance Consulting</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Retirenment Planing</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">Tax Planing</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3">
+                        <div class="third-box">
+                            <h5>Subscribe Newsletter</h5>
+                            <p>Get latest updates and offers.</p>
+                            <input type="text" placeholder="Enter your email address">
+                            <button class="btn btn-warning">SUBSCRIBE US</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="fourth-box">
+                            <h5>Contact Us</h5>
+                            <div class="icon-text">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Apple St, New York, NY 10012, USA</span>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>( 018) 65 524 8503 / (125) 954 7854</span>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>contact@lamarena.com</span>
+                            </div>
+                            <div class="sosial-tags">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b01bc4ce26.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/myAccount.js"></script>
+</body>
+
+</html>
