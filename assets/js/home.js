@@ -14,15 +14,25 @@ eur.addEventListener("click",function(){
     document.querySelector(".usd").innerText="EUR"
 })
 
+// --------------------
+
 // ----language-------
 
-// let lenguage=document.querySelector(".laguage")
+let language=document.querySelectorAll(".language li a")
+let test=document.querySelector(".test");
 
-// let grm=document.querySelector(".grm")
+for (const item of language) {
+  item.addEventListener("click",function(){
+    let test2=this.firstElementChild.getAttribute("src")
+    test.firstElementChild.setAttribute("src",test2);
+    test.lastElementChild.innerText=this.lastElementChild.innerText
+  })
+}
 
-// grm.addEventListener("click",function(){
+// -----------------------------
 
-// })   
+
+  
 
 
 
