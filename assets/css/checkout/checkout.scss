@@ -322,7 +322,7 @@
 }
 
 
-#checkout{
+#checkout {
 
 
     .form {
@@ -368,7 +368,7 @@
             padding: 10px 0 0 5px;
             resize: none;
         }
-        
+
         label {
             color: #999;
             font-size: 14px;
@@ -483,7 +483,7 @@
         }
     }
 
-    .header{
+    .header {
         margin-top: 35px;
     }
 
@@ -504,15 +504,16 @@
 
 
 
-    .container{
+    .container {
         max-width: 1300px;
 
-        .left-box{
+        .left-box {
             width: 50%;
 
-            .title{
+            .title {
                 margin-top: 15px;
-                h2{
+
+                h2 {
                     font-weight: 700;
                     font-size: 36px;
                     text-transform: capitalize;
@@ -522,26 +523,27 @@
 
             }
 
-            .inputs-flex{
+            .inputs-flex {
                 gap: 15px;
                 display: flex;
-                .group{
+
+                .group {
                     width: 320px;
 
                 }
             }
 
-            .header-title{
+            .header-title {
                 margin-left: 5px;
                 line-height: 0.5;
 
-                
-                h3{
+
+                h3 {
                     font-size: 28px;
                     font-weight: 500;
                 }
 
-                p{
+                p {
                     color: #777;
                 }
             }
@@ -550,9 +552,92 @@
 
         }
 
-        .right-box{
+        .right-box {
             width: 50%;
-            background-color: #c3c3c3;
+
+            .order-box {
+                border: 1px solid #d3c8c8;
+
+                height: 610px;
+                width: 100%;
+                padding: 4px 40px;
+                margin-top: 18px;
+
+                .title {
+                    border-bottom: 1px solid #d3c8c8;
+                    display: flex;
+                    gap: 300px;
+                    margin-top: 35px;
+                    p{
+                        font-weight: 500;
+                    }
+
+                    h5 {
+                        margin-bottom: 40px;
+
+                    }
+
+                    .total {
+                        font-size: 20px;
+                        color: #f33927;
+                        font-weight: 500;
+
+                    }
+
+                    .price {
+                        margin-left: 32px;
+
+                    }
+
+                }
+
+                .center-text {
+                    margin-top: 15px;
+                    border-bottom: 1px solid #d3c8c8;
+
+
+
+                }
+
+                .payment {
+                    gap: 5px;
+                    display: inline-grid;
+                    margin-top: 35px;
+
+
+                    .bank {
+                        gap: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: gray;
+                            font-family: revert;
+                        }
+
+                    }
+
+                    input {
+                        transition: accent-color ease 280ms;
+                        accent-color: #F3392C;
+                        cursor: pointer;
+
+                        height: 30px;
+                        width: 20px;
+                    }
+
+
+
+                }
+
+                .right {
+                    margin-top: 35px;
+
+                }
+
+            }
         }
 
     }
@@ -629,6 +714,7 @@
     .third-box {
         padding: 48px 27px;
         height: 350px;
+
         input {
             width: 270px;
             height: 45px;
@@ -651,31 +737,32 @@
 
     }
 
-    .fourth-box{
+    .fourth-box {
         padding: 48px 21px;
         height: 350px;
-        .sosial-tags{
+
+        .sosial-tags {
             margin-top: 35px;
             display: flex;
-            gap: 10px  ;
-            
-            ul{
+            gap: 10px;
+
+            ul {
                 width: 35px;
                 padding: 4px 10px;
                 height: 35px;
                 border: 1px solid;
-                border-radius: 50%; 
+                border-radius: 50%;
             }
 
-            li{
+            li {
                 list-style: none;
-                
-                a{
+
+                a {
                     color: #000;
                     text-decoration: none;
                 }
             }
-            
+
         }
 
     }

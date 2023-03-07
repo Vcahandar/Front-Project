@@ -378,7 +378,63 @@
 }
 #checkout .container .right-box {
   width: 50%;
-  background-color: #c3c3c3;
+}
+#checkout .container .right-box .order-box {
+  border: 1px solid #d3c8c8;
+  height: 610px;
+  width: 100%;
+  padding: 4px 40px;
+  margin-top: 18px;
+}
+#checkout .container .right-box .order-box .title {
+  border-bottom: 1px solid #d3c8c8;
+  display: flex;
+  gap: 300px;
+  margin-top: 35px;
+}
+#checkout .container .right-box .order-box .title p {
+  font-weight: 500;
+}
+#checkout .container .right-box .order-box .title h5 {
+  margin-bottom: 40px;
+}
+#checkout .container .right-box .order-box .title .total {
+  font-size: 20px;
+  color: #f33927;
+  font-weight: 500;
+}
+#checkout .container .right-box .order-box .title .price {
+  margin-left: 32px;
+}
+#checkout .container .right-box .order-box .center-text {
+  margin-top: 15px;
+  border-bottom: 1px solid #d3c8c8;
+}
+#checkout .container .right-box .order-box .payment {
+  gap: 5px;
+  display: inline-grid;
+  margin-top: 35px;
+}
+#checkout .container .right-box .order-box .payment .bank {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+#checkout .container .right-box .order-box .payment .bank span {
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+  font-family: revert;
+}
+#checkout .container .right-box .order-box .payment input {
+  transition: accent-color ease 280ms;
+  accent-color: #F3392C;
+  cursor: pointer;
+  height: 30px;
+  width: 20px;
+}
+#checkout .container .right-box .order-box .right {
+  margin-top: 35px;
 }
 
 #footer {
