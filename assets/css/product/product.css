@@ -841,6 +841,24 @@
 #carousel-prdct .container .product-caruosel .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+#carousel-prdct .container .product-caruosel .card a {
+  text-decoration: none;
+}
+#carousel-prdct .container .product-caruosel .card a .header-icon {
+  right: 15px;
+  top: 57px;
+  flex-direction: column;
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  gap: 13px;
+  text-decoration: none;
+  text-decoration: none;
+  color: black;
+}
+#carousel-prdct .container .product-caruosel .card a .header-icon .rtt {
+  margin-left: 2px;
+}
 #carousel-prdct .container .product-caruosel .card img {
   padding: 20px;
   background-color: #f5f5f5;

@@ -194,10 +194,6 @@
                 margin-bottom: 13px;
 
 
-                .button-icon {
-                    background-color: #ef6c00;
-                    border: none;
-                }
 
 
                 .icon-cart {
@@ -221,20 +217,24 @@
                     border-radius: 50%;
 
                     span {
-                        font-size: 12px;
+                        font-size: 14px;
                         position: relative;
-                        bottom: 5px;
-                        right: 1px;
+                        bottom: 1px;
+                        color: white;
+                        right: -3px;
                     }
 
                     .price-class {
                         left: 9px;
                         position: relative;
                         bottom: 4px;
+                        color: white;
+                        top: 7px;
 
                         span {
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 600;
-                            font-size: 15px;
+                            font-size: 18px;
                         }
                     }
 
@@ -383,8 +383,10 @@
 #home-1-wrap {
     margin-top: 25px;
 
+
+
     .container {
-        max-width: 100% !important;
+        max-width: 1300px !important;
     }
 
     .info-bar {
@@ -550,6 +552,309 @@
 
 #cards {
 
+    $color_1: #000;
+
+    .slider {
+        position: relative;
+    }
+
+    .slider__container {
+        cursor: grab;
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .slider__container.dragging {
+        scroll-behavior: auto;
+        cursor: grabbing;
+    }
+
+    .slider__item {
+        width: 23% !important;
+        padding: 16px 8px;
+        flex: 0 0 auto;
+        width: calc(100% / 5);
+
+        .modal {
+            cursor: default;
+
+
+            .modal-content {
+                right: 120px;
+                width: 830px !important;
+
+                .modal-body {
+                    padding: 23px !important;
+
+
+                    .product-img {
+
+
+                        img {
+
+                            height: 430px;
+                            width: 430px;
+
+                        }
+                    }
+
+                    .product-header-text {
+                        height: 130px;
+                        border-bottom: 1px dashed #8080805e;
+
+
+
+                        .product-text {
+                            line-height: 1;
+                            width: 100%;
+                            font-family: 'Roboto', sans-serif;
+
+                            h2 {
+                                font-weight: bolder;
+
+                                font-size: 36px;
+                                text-transform: capitalize;
+                                line-height: 1;
+                                letter-spacing: .02em;
+                            }
+
+                            del {
+                                color: #777;
+                                font-size: 18px;
+                                font-weight: 800;
+
+                            }
+
+                            span {
+                                font-weight: 700;
+                                padding-left: 5px;
+                                color: #f33927;
+                                font-size: 25px;
+                            }
+
+                            h3 {
+                                font-size: 26px;
+                                font-weight: 700;
+                                margin: 10px 0;
+                            }
+
+
+                        }
+
+                        .product-details {
+                            line-height: 1;
+                            margin-top: 40px;
+                            border-bottom: 1px dashed #8080805e;
+
+                            p {
+                                &:first-child {
+                                    font-weight: 600;
+                                    font-size: 17px;
+                                    line-height: 0.5;
+                                }
+
+
+                                &:last-child {
+                                    color: #777;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .count-text{
+                            margin-top: 14px;
+                            color: #777;
+
+                                span {
+                                   
+
+
+                                    &:nth-child(2){
+                                        color: #777;
+                                        font-size: 15px;
+                                        font-weight: 500;
+
+                                    }
+
+                                }
+
+                                .stok{
+                                    font-size: 14px;
+                                    color: #777;
+                                }
+
+
+                                .icon-modal{
+                                    bottom: 48px;
+                                    right: 35px;
+                                    position: absolute;
+                                    right: le;
+                                    font-size: 22px;
+                                    display: flex;
+                                    gap: 24px;
+                                }
+
+            
+                            .number {
+                                margin: 0;
+                            }
+            
+                            .minus,
+                            .plus {
+                                cursor: pointer;
+                                width: 20px;
+                                height: 55px;
+                                font-size: 35px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                text-align: center;
+                            }
+            
+                            input {
+                                height: 34px;
+                                width: 80px;
+                                text-align: center;
+                                font-size: 17px;
+                                border: 1px solid #ddd;
+                                border-radius: 4px;
+                                display: inline-block;
+                                vertical-align: middle;
+            
+                            }
+                        }
+                    }
+
+
+
+
+                }
+            }
+        }
+
+
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-select: none;
+        }
+    }
+
+    .slider__container[data-step="4"] {
+        .slider__item {
+            width: calc(100% / 4);
+        }
+    }
+
+    .slider__container[data-step="3"] {
+        .slider__item {
+            width: calc(100% / 3);
+        }
+    }
+
+    .slider__container[data-step="2"] {
+        .slider__item {
+            width: calc(100% / 2);
+        }
+    }
+
+    .slider__container[data-step="1"] {
+        .slider__item {
+            width: calc(100% / 1);
+        }
+    }
+
+    .slider__control {
+        font-size: 16px;
+        border: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        background: #ef6c00;
+        cursor: pointer;
+        opacity: 1;
+        transition: all .3s;
+
+        &:hover {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.2);
+        }
+    }
+
+    .slider__control.prev {
+        left: -18px;
+    }
+
+    .slider__control.next {
+        right: -26px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .slider__item {
+            width: calc(100% / 3);
+        }
+
+        .slider__container[data-step="4"] {
+            .slider__item {
+                width: calc(100% / 3);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .slider__item {
+            width: calc(100% / 2);
+        }
+
+        .slider__container[data-step="4"] {
+            .slider__item {
+                width: calc(100% / 2);
+            }
+        }
+
+        .slider__container[data-step="3"] {
+            .slider__item {
+                width: calc(100% / 2);
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .slider__item {
+            width: calc(100% / 1);
+        }
+
+        .slider__container[data-step="4"] {
+            .slider__item {
+                width: calc(100% / 1);
+            }
+        }
+
+        .slider__container[data-step="3"] {
+            .slider__item {
+                width: calc(100% / 1);
+            }
+        }
+
+        .slider__container[data-step="2"] {
+            .slider__item {
+                width: calc(100% / 1);
+            }
+        }
+    }
+
+
     .container {
         max-width: 100% !important;
     }
@@ -582,7 +887,7 @@
 
     }
 
-    .tab-one {
+    .fade {
 
         .row {
             --bs-gutter-x: -9.5rem;
@@ -590,15 +895,56 @@
         }
 
         .card {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+            .a{
+                text-decoration: none;
+
+                .header-icon {
+                    right: 15px;
+                    top: 57px;
+                    flex-direction: column;
+                    position: absolute;
+                    font-size: 23px;
+                    display: flex;
+                    gap: 10px;
+                    text-decoration: none;
+                    text-decoration: none;
+                    color: black;
+
+                    button {
+                        border: none;
+                        background: white;
+                        color: black;
+                        width: 24px;
+                        height: 33px;
+                        padding: 1px;
+                        
+                        i{
+                            font-size: 21px;
+
+                        }
+                    }
+
+
+                    .rtt {
+                        margin-left: 2px;
+
+
+
+                    }
+                }
+            }
 
             img {
-                margin-left: 21px;
-                height: 185px;
-                width: 210px;
+                padding: 5px 25px;
+                height: 200px;
 
             }
 
             .card-body {
+                font-family: 'Roboto', sans-serif;
+
                 :hover {
                     a {
                         background-color: #eee;
@@ -613,13 +959,13 @@
 
                 .card-title {
                     line-height: 0.8;
+                    font-weight: 700;
+
                 }
 
                 .money-icons {
                     align-items: center;
-                    justify-content: center;
-
-                    line-height: 3;
+                    gap: 20px;
 
                     .icon-star {
                         color: orange;
@@ -631,7 +977,7 @@
 
                         span {
                             font-size: 20px;
-                            font-weight: 400;
+                            font-weight: 700;
                         }
                     }
                 }
@@ -645,6 +991,7 @@
                 }
 
                 .mybtn {
+                    margin-top: 20px;
                     border: none;
                     background-color: #ef6c00;
                     width: 219px;
@@ -657,6 +1004,9 @@
                     transition: all 0.5s;
                 }
             }
+
+
+
         }
     }
 
@@ -694,6 +1044,7 @@
                     }
 
                     a {
+                        color: #000;
                         font-weight: 700;
                         font-size: 16px;
                         text-decoration: none;
@@ -750,6 +1101,7 @@
                         }
 
                         a {
+                            color: #000;
                             font-weight: 700;
                             font-size: 16px;
                             text-decoration: none;
@@ -781,6 +1133,7 @@
                         }
 
                         a {
+                            color: #000;
                             font-size: 16px;
                             font-weight: 700;
                             text-decoration: none;
@@ -804,6 +1157,11 @@
 
                 .text {
 
+
+                    
+
+
+
                     h4 {
                         font-family: system-ui;
                         line-height: 1;
@@ -819,6 +1177,7 @@
                     }
 
                     a {
+                        
                         text-decoration: none;
 
                         button {
@@ -994,6 +1353,7 @@
     .third-box {
         padding: 48px 27px;
         height: 350px;
+
         input {
             width: 270px;
             height: 45px;
@@ -1016,34 +1376,35 @@
 
     }
 
-    .fourth-box{
+    .fourth-box {
         padding: 48px 21px;
         height: 350px;
-        .sosial-tags{
+
+        .sosial-tags {
             margin-top: 35px;
             display: flex;
-            gap: 10px  ;
-            
-            ul{
+            gap: 10px;
+
+            ul {
                 width: 35px;
                 padding: 4px 10px;
                 height: 35px;
                 border: 1px solid;
-                border-radius: 50%; 
+                border-radius: 50%;
             }
 
-            li{
+            li {
                 list-style: none;
-                
-                a{
+
+                a {
                     color: #000;
                     text-decoration: none;
                 }
             }
 
 
-    
-            
+
+
         }
 
 

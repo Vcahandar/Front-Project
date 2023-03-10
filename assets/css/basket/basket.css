@@ -1,0 +1,307 @@
+#myNavbar .navbarUp {
+  background: #222 !important;
+  height: 64px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown {
+  display: flex;
+  margin-left: 22px;
+  padding: 5px;
+  gap: 60px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown a .money {
+  background: #ef6c00 !important;
+  font-size: 11px;
+  font-weight: 400;
+  color: #fff;
+  padding: 1px 3px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown .usd {
+  font-weight: 700;
+  color: #c3c3c3;
+  font-size: 14px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown .dropdown-menu {
+  width: 221px;
+  border-top: 4px solid #c3c3c3 !important;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown .dropdown-menu .flag {
+  width: 18px;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown .language {
+  font-weight: 500;
+  color: #c3c3c3;
+  font-size: 14px;
+  transition: 0.4s;
+}
+#myNavbar .navbarUp .navbar-nav .dropdown .language .flag {
+  width: 18px;
+}
+#myNavbar .navbarUp .nav-left {
+  margin-right: 7px;
+}
+#myNavbar .navbarUp .nav-left .left {
+  display: flex;
+  gap: 12px;
+}
+#myNavbar .navbarUp .nav-left .left a {
+  font-weight: 600;
+  font-size: 14px;
+  color: #c3c3c3;
+  display: flex;
+  transition: all 0.5s;
+}
+#myNavbar .navbarUp .nav-left .left a :hover {
+  color: gray;
+}
+#myNavbar .navbarUp .nav-left .left i {
+  margin-right: 6px;
+  font-size: 20px;
+  margin-top: 2px;
+}
+#myNavbar .navbarUp .nav-left .left .acount {
+  width: 160px;
+}
+#myNavbar .navDown {
+  width: 100%;
+  height: 90px;
+  background-color: #ef6c00;
+}
+#myNavbar .navDown .container {
+  max-width: 100% !important;
+}
+#myNavbar .navDown .logo {
+  margin-left: 41px;
+  margin-top: 23px;
+}
+#myNavbar .navDown .search {
+  margin-top: 25px;
+  margin-left: 42px;
+}
+#myNavbar .navDown .search input {
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 3px 0px 0 3px;
+  border: 1px #fff;
+  height: 40px;
+  float: left;
+  outline: none;
+}
+#myNavbar .navDown .search button {
+  border-radius: 0 3px 3px 0;
+  height: 40px;
+  text-transform: uppercase;
+  width: 120px;
+  background-color: #222;
+}
+#myNavbar .navDown .text-basket {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-family: sans-serif;
+  margin-left: 60px;
+  margin-top: 26px;
+}
+#myNavbar .navDown .text-basket .icon-phone i {
+  color: white;
+  font-size: 29px;
+  width: 29px;
+  height: 28px;
+}
+#myNavbar .navDown .text-basket .info-text p {
+  font-weight: bolder;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+#myNavbar .navDown .text-basket .info-text span {
+  font-family: system-ui;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+#myNavbar .navDown .text-basket .basket {
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 13px;
+}
+#myNavbar .navDown .text-basket .basket .button-icon {
+  background-color: #ef6c00;
+  border: none;
+}
+#myNavbar .navDown .text-basket .basket .icon-cart {
+  position: absolute;
+}
+#myNavbar .navDown .text-basket .basket .icon-cart i {
+  color: white;
+  font-size: 22px;
+}
+#myNavbar .navDown .text-basket .basket .count-price {
+  position: relative;
+  bottom: 9px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+#myNavbar .navDown .text-basket .basket .count-price span {
+  font-size: 12px;
+  position: relative;
+  bottom: 5px;
+  right: 1px;
+}
+#myNavbar .navDown .text-basket .basket .count-price .price-class {
+  left: 9px;
+  position: relative;
+  bottom: 4px;
+}
+#myNavbar .navDown .text-basket .basket .count-price .price-class span {
+  font-weight: 600;
+  font-size: 15px;
+}
+#myNavbar .secondNav {
+  background-color: #f3f3f3;
+}
+#myNavbar .secondNav .container {
+  max-width: 95% !important;
+}
+#myNavbar .secondNav .nvbar {
+  background-color: #f3f3f3 !important;
+}
+#myNavbar .secondNav .nvbar .navbar-nav {
+  display: flex;
+  gap: 70px;
+}
+#myNavbar .secondNav .nvbar .nav-item a {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+#myNavbar .about-navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #f3f3f3;
+}
+#myNavbar .about-navbar .container {
+  max-width: 100% !important;
+}
+#myNavbar .about-navbar .container .navAbout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+#myNavbar .about-navbar .container .navAbout .left h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#myNavbar .about-navbar .container .navAbout .right {
+  display: flex;
+}
+#myNavbar .about-navbar .container .navAbout .right a {
+  color: #222;
+  text-decoration: none;
+}
+#myNavbar .about-navbar .container .navAbout .right h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#basket-main .container {
+  max-width: 1300px;
+}
+#basket-main .container .basket-table {
+  margin-top: 35px;
+}
+#footer {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+#footer .container {
+  max-width: 100% !important;
+}
+#footer .frst-box {
+  padding: 48px 27px;
+  height: 350px;
+}
+#footer .frst-box p {
+  font-size: 16px;
+  font-weight: 400;
+}
+#footer .frst-box a {
+  color: #000;
+  text-decoration: none;
+}
+#footer .frst-box a p {
+  line-height: 0.5;
+}
+#footer .scnd-box {
+  height: 350px;
+  padding: 48px 27px;
+}
+#footer .scnd-box .info {
+  font-size: 14px;
+  margin-left: -31px;
+}
+#footer .scnd-box .info li {
+  list-style: none;
+}
+#footer .scnd-box .info li a {
+  color: #000;
+  text-decoration: none;
+}
+#footer .scnd-box li {
+  list-style: none;
+}
+#footer .scnd-box li a {
+  text-decoration: none;
+}
+#footer .third-box {
+  padding: 48px 27px;
+  height: 350px;
+}
+#footer .third-box input {
+  width: 270px;
+  height: 45px;
+  border-radius: 3px;
+  padding: 0 40px 0 18px;
+  border: 1px solid #e2e2e2;
+}
+#footer .third-box button {
+  height: 45px;
+  color: white;
+  width: 100%;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: #ef6c00;
+}
+#footer .fourth-box {
+  padding: 48px 21px;
+  height: 350px;
+}
+#footer .fourth-box .sosial-tags {
+  margin-top: 35px;
+  display: flex;
+  gap: 10px;
+}
+#footer .fourth-box .sosial-tags ul {
+  width: 35px;
+  padding: 4px 10px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+#footer .fourth-box .sosial-tags li {
+  list-style: none;
+}
+#footer .fourth-box .sosial-tags li a {
+  color: #000;
+  text-decoration: none;
+}/*# sourceMappingURL=basket.css.map */
