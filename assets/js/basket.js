@@ -35,7 +35,7 @@ for (const item of language) {
 
 
 // --------------------basket----------------------
-
+// ------------home------------
 
 let tableBody = document.querySelector("tbody")
 
@@ -76,6 +76,7 @@ function getBasketDatas() {
 }
 
 function showAlert() {
+
     document.querySelector("table").classList.add("d-none")
     document.querySelector(".empty-contunie").classList.remove("d-none")
 }
@@ -94,10 +95,10 @@ function deleteProduct(id) {
 }
 
 
-let deleteIcons = document.querySelectorAll(".delete")
+let deleteIcon = document.querySelectorAll(".delete")
 
 
-deleteIcons.forEach(icon => {
+deleteIcon.forEach(icon => {
     icon.addEventListener("click", function () {
         let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"))
         deleteProduct(id);
@@ -194,6 +195,10 @@ for (const item of minus) {
         }
     })
 }
+
+
+
+
 
 
 

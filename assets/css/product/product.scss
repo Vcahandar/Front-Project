@@ -427,6 +427,7 @@
                 width: 31% !important;
 
                 img {
+                    cursor: pointer;
                     padding: 12px;
                     -webkit-user-drag: none;
                     -khtml-user-drag: none;
@@ -1065,7 +1066,7 @@
     .container {
         max-width: 1300px;
 
-        .title {}
+    
 
         .product-caruosel {
 
@@ -1180,6 +1181,26 @@
 
             .card {
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                font-family: 'Roboto', sans-serif;
+                &:hover{
+                
+                    .header-icon{
+                        display: flex !important;
+                        
+                    }
+                }
+                &:hover{
+                    .header-icon{
+    
+    
+                        i{
+                            &:hover{
+                                color: #ef6c00;
+                            }
+                        }
+                    }
+                }
+
 
 
                 a {
@@ -1195,13 +1216,12 @@
                         text-decoration: none;
                         text-decoration: none;
                         color: black;
+
+                        
                         
 
                         .rtt{
                             margin-left: 2px;
-                            
- 
-
                         }
                     }
                 }
@@ -1215,11 +1235,7 @@
                 .card-body {
                     height: 125px;
 
-                    :hover {
-                        a {
-                            background-color: #eee;
-                        }
-                    }
+
 
                     p {
                         color: gray;
@@ -1229,6 +1245,8 @@
 
                     .card-title {
                         line-height: 0;
+                        font-weight: 600;
+
                     }
 
                     .money-icons {
@@ -1254,10 +1272,13 @@
 
 
                     a {
-                        :hover {
-                            background-color: #333 !important;
-
+                        &:hover{
+                            border: 1px solid #ef6c00;
+                            color: #ef6c00 !important;
+                            background-color: white !important;
                         }
+
+
                     }
 
                     .mybtn {

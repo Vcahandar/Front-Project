@@ -293,6 +293,7 @@
   width: 31% !important;
 }
 #product .container .small-carousel .slider__item img {
+  cursor: pointer;
   padding: 12px;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -840,6 +841,13 @@
 }
 #carousel-prdct .container .product-caruosel .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-family: "Roboto", sans-serif;
+}
+#carousel-prdct .container .product-caruosel .card:hover .header-icon {
+  display: flex !important;
+}
+#carousel-prdct .container .product-caruosel .card:hover .header-icon i:hover {
+  color: #ef6c00;
 }
 #carousel-prdct .container .product-caruosel .card a {
   text-decoration: none;
@@ -866,9 +874,6 @@
 #carousel-prdct .container .product-caruosel .card .card-body {
   height: 125px;
 }
-#carousel-prdct .container .product-caruosel .card .card-body :hover a {
-  background-color: #eee;
-}
 #carousel-prdct .container .product-caruosel .card .card-body p {
   color: gray;
   font-size: 13px;
@@ -876,6 +881,7 @@
 }
 #carousel-prdct .container .product-caruosel .card .card-body .card-title {
   line-height: 0;
+  font-weight: 600;
 }
 #carousel-prdct .container .product-caruosel .card .card-body .money-icons {
   align-items: center;
@@ -890,8 +896,10 @@
   font-size: 20px;
   font-weight: 400;
 }
-#carousel-prdct .container .product-caruosel .card .card-body a :hover {
-  background-color: #333 !important;
+#carousel-prdct .container .product-caruosel .card .card-body a:hover {
+  border: 1px solid #ef6c00;
+  color: #ef6c00 !important;
+  background-color: white !important;
 }
 #carousel-prdct .container .product-caruosel .card .card-body .mybtn {
   bottom: 40px;

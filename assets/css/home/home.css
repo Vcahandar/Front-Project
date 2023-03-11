@@ -607,9 +607,8 @@
 }
 #cards .navbar-card .tab-nav .nav-item {
   width: 200px;
-  transition: all 1s;
 }
-#cards .navbar-card .tab-nav .nav-item :hover {
+#cards .navbar-card .tab-nav .nav-item:hover {
   border-bottom: 3px solid orange;
 }
 #cards .navbar-card .tab-nav .nav-item button {
@@ -694,10 +693,11 @@
 }
 #cards .fade .card .card-body a:hover {
   border: 1px solid #ef6c00;
-  color: #ef6c00;
+  color: #ef6c00 !important;
   background-color: white !important;
 }
 #cards .fade .card .card-body .mybtn {
+  color: white !important;
   margin-top: 20px;
   border: none;
   background-color: #ef6c00;

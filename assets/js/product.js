@@ -34,12 +34,13 @@ for (const item of language) {
 // --------------basket-------------------------
 
 
-let cardBtns =document.querySelectorAll("#cards .slider .slider__item .card-body a")
+let cardBtns =document.querySelectorAll("#carousel-prdct .slider .slider__item .card-body a")
+
 
 let products=[];
 
-if(localStorage.getItem("basket")!=null){
-  products=JSON.parse(localStorage.getItem("basket"))
+if(localStorage.getItem("basket-product")!=null){
+  products=JSON.parse(localStorage.getItem("basket-product"))
 }
 
 
@@ -48,7 +49,9 @@ cardBtns.forEach(btn => {
   btn.addEventListener("click",function(e){
     e.preventDefault();
 
-    let productImg = this.parentNode.previousElementSibling.lastElementChild.firstElementChild.getAttribute("src")
+  
+
+    let productImg = this.parentNode.previousElementSibling.lastElementChild.getAttribute("src")
     let productName = this.previousElementSibling.previousElementSibling.innerText;
     let productId = parseInt(this.parentNode.parentNode.getAttribute("data-id"))
     let productPrice = parseInt(this.previousElementSibling.lastElementChild.lastElementChild.innerText)
@@ -69,7 +72,7 @@ cardBtns.forEach(btn => {
       })
 
     }
-    localStorage.setItem("basket",JSON.stringify(products))
+    localStorage.setItem("basket-product",JSON.stringify(products))
 
     getBasketCount(products)
     showTotalPrice()
@@ -207,3 +210,16 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+// -----------
+
+// let imgs=document.querySelectorAll(".test");
+
+
+// for (const item of imgs) {
+//   item.addEventListener("click",function(){
+//     console.log(item);
+   
+//   })
+// }

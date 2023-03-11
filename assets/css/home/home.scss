@@ -871,9 +871,8 @@
 
             .nav-item {
                 width: 200px;
-                transition: all 1s;
 
-                :hover {
+                &:hover {
                     border-bottom: 3px solid orange;
                 }
 
@@ -899,6 +898,7 @@
         .card {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             &:hover{
+                
                 .header-icon{
                     display: flex !important;
                     
@@ -945,7 +945,6 @@
                         
                         i{
                             font-size: 21px;
-
                         }
                     }
 
@@ -1001,15 +1000,14 @@
 
                     &:hover{
                         border: 1px solid #ef6c00;
-                        color: #ef6c00;
+                        color: #ef6c00 !important;
                         background-color: white !important;
-
-                    
                     }
 
                 }
 
                 .mybtn {
+                    color: white !important;
                     margin-top: 20px;
                     border: none;
                     background-color: #ef6c00;
