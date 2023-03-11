@@ -1,6 +1,7 @@
 #myNavbar {
 
 
+
     .navbarUp {
         background: #222 !important;
         height: 64px;
@@ -193,10 +194,6 @@
                 margin-bottom: 13px;
 
 
-                .button-icon {
-                    background-color: #ef6c00;
-                    border: none;
-                }
 
 
                 .icon-cart {
@@ -220,20 +217,24 @@
                     border-radius: 50%;
 
                     span {
-                        font-size: 12px;
+                        font-size: 14px;
                         position: relative;
-                        bottom: 5px;
-                        right: 1px;
+                        bottom: 1px;
+                        color: white;
+                        right: -3px;
                     }
 
                     .price-class {
                         left: 9px;
                         position: relative;
                         bottom: 4px;
+                        color: white;
+                        top: 7px;
 
                         span {
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 600;
-                            font-size: 15px;
+                            font-size: 18px;
                         }
                     }
 
@@ -271,53 +272,47 @@
                 }
             }
 
+
+
+
         }
 
     }
 
-    .about-navbar {
+    .down-navbar{
         width: 100%;
         height: 60px;
         border: 1px solid #f3f3f3;
-
-
         .container {
             max-width: 100% !important;
-
-            .navAbout {
+            .navHome{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 15px;
-
                 .left {
-
                     h4 {
                         text-transform: uppercase;
                         font-size: 14px;
                     }
                 }
-
-
                 .right {
                     display: flex;
-
                     a {
                         color: #222;
                         text-decoration: none;
                     }
-
                     h4 {
                         text-transform: uppercase;
                         font-size: 14px;
-
                     }
-
                 }
-
             }
         }
     }
+
+
+
 
 }
 

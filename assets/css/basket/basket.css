@@ -182,6 +182,35 @@
   font-size: 15px;
   font-weight: 600;
 }
+#myNavbar .down-navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #f3f3f3;
+}
+#myNavbar .down-navbar .container {
+  max-width: 100% !important;
+}
+#myNavbar .down-navbar .container .navHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+#myNavbar .down-navbar .container .navHome .left h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#myNavbar .down-navbar .container .navHome .right {
+  display: flex;
+}
+#myNavbar .down-navbar .container .navHome .right a {
+  color: #222;
+  text-decoration: none;
+}
+#myNavbar .down-navbar .container .navHome .right h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
 #basket-main .container {
   max-width: 1300px;
@@ -210,6 +239,9 @@
   font-weight: 600;
 }
 #basket-main .container .basket-table .table {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-family: "Roboto", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -273,6 +305,28 @@
   padding-top: 30px;
   font-size: 27px;
   cursor: pointer;
+}
+#basket-main .container .basket-table .total-continue {
+  display: flex;
+  justify-content: space-between;
+}
+#basket-main .container .basket-table .total-continue .backShop .btn {
+  font-weight: 800;
+  color: white;
+  background-color: #ef6c00;
+  height: 55px;
+  font-family: "Roboto", sans-serif;
+}
+#basket-main .container .basket-table .total-continue .total {
+  font-size: 14px;
+  font-weight: 600;
+}
+#basket-main .container .basket-table .total-continue .total .btn {
+  font-weight: 800;
+  color: white;
+  background-color: #ef6c00;
+  height: 55px;
+  font-family: "Roboto", sans-serif;
 }
 
 #footer {

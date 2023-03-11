@@ -1,6 +1,7 @@
 #myNavbar {
 
 
+
     .navbarUp {
         background: #222 !important;
         height: 64px;
@@ -14,6 +15,7 @@
                 gap: 60px;
 
                 a {
+
                     .money {
                         background: #ef6c00 !important;
                         font-size: 11px;
@@ -192,10 +194,6 @@
                 margin-bottom: 13px;
 
 
-                .button-icon {
-                    background-color: #ef6c00;
-                    border: none;
-                }
 
 
                 .icon-cart {
@@ -219,20 +217,24 @@
                     border-radius: 50%;
 
                     span {
-                        font-size: 12px;
+                        font-size: 14px;
                         position: relative;
-                        bottom: 5px;
-                        right: 1px;
+                        bottom: 1px;
+                        color: white;
+                        right: -3px;
                     }
 
                     .price-class {
                         left: 9px;
                         position: relative;
                         bottom: 4px;
+                        color: white;
+                        top: 7px;
 
                         span {
+                            font-family: 'Roboto', sans-serif;
                             font-weight: 600;
-                            font-size: 15px;
+                            font-size: 18px;
                         }
                     }
 
@@ -270,121 +272,113 @@
                 }
             }
 
+
+
+
         }
 
     }
 
-    .about-navbar {
+    .down-navbar{
         width: 100%;
         height: 60px;
         border: 1px solid #f3f3f3;
-
-
         .container {
             max-width: 100% !important;
-
-            .navAbout {
+            .navHome{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 15px;
-
                 .left {
-
                     h4 {
                         text-transform: uppercase;
                         font-size: 14px;
                     }
                 }
-
-
                 .right {
                     display: flex;
-
                     a {
                         color: #222;
                         text-decoration: none;
                     }
-
                     h4 {
                         text-transform: uppercase;
                         font-size: 14px;
-
                     }
-
                 }
-
             }
         }
     }
 
+
+
+
 }
 
 
-#main{
+#main {
 
-    
-    .container{
+
+    .container {
         max-width: 1300px;
 
-        .main-map{
+        .main-map {
             margin-top: 35px;
             padding: 20px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 
-            iframe{
+            iframe {
                 width: 100%;
             }
 
-            .title-text{
+            .title-text {
                 display: flex;
                 gap: 15px;
                 margin-top: 30px;
 
 
-                .left-text{
+                .left-text {
                     width: 50%;
 
-                    .title{
+                    .title {}
 
-                    }
-
-                    .icon-text{
+                    .icon-text {
                         display: flex;
                         gap: 15px;
                         margin-top: 30px;
 
-                        .content{
+                        .content {
                             margin-left: 20px;
                         }
 
-                        i{
+                        i {
                             font-size: 30px;
                             color: #ef6c00;
                         }
 
-                        .text{
+                        .text {
                             line-height: 0.5;
 
-                            hr{
+                            hr {
                                 width: 510px;
                                 margin-left: -65px;
 
 
                             }
 
-                            h4{
+                            h4 {
                                 font-size: 20px;
 
                             }
 
-                            p{
+                            p {
                                 font-family: inherit;
                                 /* font-style: unset; */
                                 color: #777;
                                 font-weight: 400;
-                            
+
                             }
 
                         }
@@ -392,26 +386,23 @@
 
                 }
 
-                .right-text{
+                .right-text {
                     width: 50%;
 
 
-                    .title-form{
+                    .title-form {
 
-                        .title{
-
-                            
-                        }
+                        .title {}
 
                         .form {
                             margin-bottom: -20px;
                             margin-top: 60px;
-        
+
                             .group {
                                 position: relative;
                                 margin-bottom: 45px;
                             }
-        
+
                             input,
                             textarea {
                                 font-size: 15px;
@@ -435,18 +426,18 @@
                                 }
 
                             }
-        
+
                             input:focus {
                                 outline: none;
                             }
-        
+
                             /* LABEL ======================================= */
                             .textarea {
                                 height: 110px;
                                 padding: 10px 0 0 5px;
                                 resize: none;
                             }
-                            
+
                             label {
                                 color: #999;
                                 font-size: 14px;
@@ -458,7 +449,7 @@
                                 -moz-transition: 0.2s ease all;
                                 -webkit-transition: 0.2s ease all;
                             }
-        
+
                             /* active state */
                             input:focus~label,
                             input:valid~label {
@@ -473,14 +464,14 @@
                                 font-size: 14px;
                                 color: #ef6c00;
                             }
-        
+
                             /* BOTTOM BARS ================================= */
                             .bar {
                                 position: relative;
                                 display: block;
                                 width: 100%;
                             }
-        
+
                             .bar:before,
                             .bar:after {
                                 content: '';
@@ -493,21 +484,21 @@
                                 -moz-transition: 0.2s ease all;
                                 -webkit-transition: 0.2s ease all;
                             }
-        
+
                             .bar:before {
                                 left: 50%;
                             }
-        
+
                             .bar:after {
                                 right: 50%;
                             }
-        
+
                             /* active state */
                             input:focus~.bar:before,
                             input:focus~.bar:after {
                                 width: 50%;
                             }
-        
+
                             /* HIGHLIGHTER ================================== */
                             .highlight {
                                 position: absolute;
@@ -518,42 +509,42 @@
                                 pointer-events: none;
                                 opacity: 0.5;
                             }
-        
+
                             /* active state */
                             input:focus~.highlight {
                                 -webkit-animation: inputHighlighter 0.3s ease;
                                 -moz-animation: inputHighlighter 0.3s ease;
                                 animation: inputHighlighter 0.3s ease;
                             }
-        
+
                             /* ANIMATIONS ================ */
                             @-webkit-keyframes inputHighlighter {
                                 from {
                                     background: white;
                                 }
-        
+
                                 to {
                                     width: 0;
                                     background: transparent;
                                 }
                             }
-        
+
                             @-moz-keyframes inputHighlighter {
                                 from {
                                     background: white;
                                 }
-        
+
                                 to {
                                     width: 0;
                                     background: transparent;
                                 }
                             }
-        
+
                             @keyframes inputHighlighter {
                                 from {
                                     background: white;
                                 }
-        
+
                                 to {
                                     width: 0;
                                     background: transparent;
@@ -562,43 +553,32 @@
                         }
                     }
 
-                    
-                .click-btn {
 
-                    button {
-                        border: none;
-                        background-color: #ef6c00;
-                        width: 110px;
-                        font-size: 14px;
-                        height: 50px;
-                        font-weight: 700;
-                        color: white;
+                    .click-btn {
+
+                        button {
+                            border: none;
+                            background-color: #ef6c00;
+                            width: 110px;
+                            font-size: 14px;
+                            height: 50px;
+                            font-weight: 700;
+                            color: white;
+                        }
                     }
-                }
 
 
                 }
             }
 
         }
-    
+
 
     }
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -667,6 +647,7 @@
     .third-box {
         padding: 48px 27px;
         height: 350px;
+
         input {
             width: 270px;
             height: 45px;
@@ -689,31 +670,32 @@
 
     }
 
-    .fourth-box{
+    .fourth-box {
         padding: 48px 21px;
         height: 350px;
-        .sosial-tags{
+
+        .sosial-tags {
             margin-top: 35px;
             display: flex;
-            gap: 10px  ;
-            
-            ul{
+            gap: 10px;
+
+            ul {
                 width: 35px;
                 padding: 4px 10px;
                 height: 35px;
                 border: 1px solid;
-                border-radius: 50%; 
+                border-radius: 50%;
             }
 
-            li{
+            li {
                 list-style: none;
-                
-                a{
+
+                a {
                     color: #000;
                     text-decoration: none;
                 }
             }
-            
+
         }
 
     }

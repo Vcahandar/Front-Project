@@ -19,29 +19,17 @@ eur.addEventListener("click",function(){
 // ----language-------
 
 let language=document.querySelectorAll(".language li a")
-let test=document.querySelector(".test");
+let basic=document.querySelector(".basic");
 
 for (const item of language) {
   item.addEventListener("click",function(){
-    let test2=this.firstElementChild.getAttribute("src")
-    test.firstElementChild.setAttribute("src",test2);
-    test.lastElementChild.innerText=this.lastElementChild.innerText
+    let basicImg=this.firstElementChild.getAttribute("src")
+    basic.firstElementChild.setAttribute("src",basicImg);
+    basic.lastElementChild.innerText=this.lastElementChild.innerText
   })
 }
 
 // -----------------------------
-
-
-
-
-  
-
-
-
-
-
-
-
 
 //=---------------------- slider-------------
 
@@ -149,6 +137,32 @@ sliders.forEach((slider, i) => {
 
 
 
+// ------------------card-hover---------------
+//  let card = document.querySelectorAll(".slider__item .card")
+
+//  for (const item of card) {
+
+//   item.addEventListener("mouseover",function(){
+
+//     let icons=document.querySelectorAll(".card .header-icon")
+    
+//     for (const icon of icons) {
+
+//       icon.classList.remove(".d-none")
+      
+//     }
+
+
+    
+
+    
+
+//   })
+  
+//  }
+
+
+
 
 
 // --------------------modal-plus-minus--------------
@@ -169,7 +183,6 @@ $(document).ready(function() {
     return false;
   });
 });
-
 
 
 
@@ -199,7 +212,7 @@ cardBtns.forEach(btn => {
 
     if(existProduct!=undefined){
       existProduct.count+=1;
-      
+      existProduct.price = productPrice*existProduct.count;
     }
     else{
       products.push({
@@ -214,6 +227,7 @@ cardBtns.forEach(btn => {
     localStorage.setItem("basket",JSON.stringify(products))
 
     getBasketCount(products)
+    showTotalPrice()
   })
   
 });
@@ -227,22 +241,97 @@ function getBasketCount(arr){
 getBasketCount(products)
 
 
-  
+function showTotalPrice() {
+  if (products != null) {
+
+      let sum = 0;
+      for (const item of products) {
+          sum += parseInt(item.price);
+      }
+
+      document.querySelector(".subtotal-bottom").innerText = `$${sum}.00`;
+  }
+}
+
+showTotalPrice()
+
+function getBasketTotal(arr){
+  document.querySelector(".price-class").lastElementChild.innerText;
+
+}
 
 
-  
 
 
 
 // -------------------wishlist-------------------
 
-// let cardWshlst =document.querySelectorAll("#cards .slider .slider__item .header-icon button")
-// console.log(cardWshlst);
+let cardWshlst =document.querySelectorAll("#cards .slider .slider__item .header-icon .fa-heart");
 
-// let wishlists=[];
+let wshlstProduct=[];
+
+if(localStorage.getItem("wishlist")!=null){
+  wshlstProduct=JSON.parse(localStorage.getItem("wishlist"))
+}
+
+cardWshlst.forEach(btn => {
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+
+    let productImg = this.parentNode.nextElementSibling.firstElementChild.getAttribute("src");
+    let productName = this.parentNode.parentNode.nextElementSibling.children[1].innerText;
+    let productId = parseInt(this.parentNode.parentNode.parentNode.getAttribute("data-id"));
+    let productPrice = parseInt(this.parentNode.parentNode.nextElementSibling.children[2].lastElementChild.lastElementChild.innerText)
+
+    let existWishlist=wshlstProduct.find(m=>m.id==productId)
+    
+    if(existWishlist!=undefined){
+      existWishlist.count+=1;
+      
+    }
+    else{
+      wshlstProduct.push({
+        id:productId,
+        name:productName,
+        img:productImg,
+        price:productPrice,
+        count:1,
+      })
+
+    }
+
+    localStorage.setItem("wishlist",JSON.stringify(wshlstProduct));
+
+
+  })
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // if(localStorage.getItem("basket")!=null){
-//   products=JSON.parse(localStorage.getItem("basket"))
+//   wishlists=JSON.parse(localStorage.getItem("basket"))
 // }
 
 
@@ -255,13 +344,14 @@ getBasketCount(products)
 //     let productName= this.previousElementSibling.previousElementSibling.innerText;
 //     let productId = parseInt(this.parentNode.parentNode.getAttribute("data-id"))
 
+    
 //     let existProduct=products.find(m=>m.id==productId)
 
 //     if(existProduct!=undefined){
 //       existProduct.count+=1;
 //     }
 //     else{
-//       products.push({
+//       wishlists.push({
 //         id:productId,
 //         name:productName,
 //         img:productImg,
@@ -269,10 +359,7 @@ getBasketCount(products)
 //       })
 
 //     }
-//     localStorage.setItem("basket",JSON.stringify(products))
+//     localStorage.setItem("basket",JSON.stringify(wishlists))
 //   })
   
 // });
-
-
-

@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
     ">
 
     <link rel="stylesheet" href="./assets/css/wishlist/wishlist.css">
-    <title>Document</title>
+    <title>Wishlist</title>
 </head>
 
 <body>
@@ -26,13 +29,13 @@
                                     aria-expanded="false">
                                     USD
                                 </a>
-                                <ul class="dropdown-menu ">
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item usd-frst " href="#"><span class="money">USD</span></a>
                                     </li>
                                     <li><a class="dropdown-item eur" href="#"><span class="money">EUR</span></a></li>
                                 </ul>
 
-                                <a class="nav-link dropdown-toggle language test" href="#" role="button"
+                                <a class="nav-link dropdown-toggle language basic" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="flag" src="./assets/img/Home/flagGB.svg" alt=""><span> English</span>
                                 </a>
@@ -63,7 +66,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item left">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="./wishlist.html">
                                     <i class="fa-regular fa-heart"></i> WISHLIST</a>
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-rotate"></i>COMPARE</a>
@@ -106,9 +109,9 @@
 
                                 <div class="basket">
                                     <div class="icon-cart">
-                                       <a href="./basket.html">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                       </a>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
                                     </div>
 
                                     <div class="count-price">
@@ -116,12 +119,10 @@
                                             <span>0</span>
                                         </div>
 
-                                        <div class="price-class">
-                                            <span>$0.00</span>
+                                        <div class="price-class d-flex">
+                                            <span class="subtotal-bottom">$0.00</span>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -157,10 +158,10 @@
                                             <li><a class="dropdown-item" href="./about.html">About</a></li>
                                             <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
                                             <li><a class="dropdown-item" href="./myAccount.html">Account</a></li>
-                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="./basket.html">Cart</a></li>
                                             <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
                                             <li><a class="dropdown-item" href="./product.html">Product Detail</a></li>
-                                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                            <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
                                             <li><a class="dropdown-item" href="./checkout.html">Ckeckout</a></li>
                                         </ul>
                                     </li>
@@ -175,45 +176,59 @@
 
             </div>
 
+            <div class="down-navbar">
+                <div class="container">
+                    <div class="navHome">
+                        <div class="left">
+                            <h4>WISHLIST</h4>
+                        </div>
+                        <div class="right">
+                            <a href="./home.html">
+                                <h4>HOME </h4>
+                            </a>
+                            <h4> / WISHLIST</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </header>
 
     <main>
-        <section id="basket-main">
+        <section id="wishlist-main">
             <div class="container">
-                <div class="basket-table">
+                <div class="wishlist-table">
                     <div class="empty-contunie d-none">
                         <div class="empty">
-                            <button type="button" class="btn btn-danger">YOU HAVE NO ITEMS IN YOUR SHOPPING CART.</button>
+                            <button type="button" class="btn btn-danger">YOU HAVE NO ITEMS IN YOUR SHOPPING
+                                CART.</button>
                         </div>
                         <div class="continue">
-                            <button type="button" class="btn btn-warning">Continue shopping</button>
-                    </div>
-
-
+                            <a href="./home.html">
+                                <button type="button" class="btn btn-warning">Continue shopping</button>
+                            </a>
+                        </div>
 
                     </div>
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Clear All</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th class="btn btn-danger" scope="col">Clear All</th>
+                            </tr>
                         </thead>
                         <tbody>
 
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
 
         </section>
     </main>
-
-
-
 
 
     <footer>

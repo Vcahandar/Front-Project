@@ -27,24 +27,29 @@
                                     aria-expanded="false">
                                     USD
                                 </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item usd-frst " href="#"><span class="money">USD</span></a></li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item usd-frst " href="#"><span class="money">USD</span></a>
+                                    </li>
                                     <li><a class="dropdown-item eur" href="#"><span class="money">EUR</span></a></li>
                                 </ul>
 
-                                <a class="nav-link dropdown-toggle language test" href="#" role="button"
+                                <a class="nav-link dropdown-toggle language basic" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="flag" src="./assets/img/Home/flagGB.svg" alt=""><span> English</span>
                                 </a>
                                 <ul class="dropdown-menu language">
                                     <li><a class="dropdown-item eng" href="#"><img class="flag"
-                                                src="./assets/img/Home/flagGB.svg" alt=""><span>English</span></a></li><br>
+                                                src="./assets/img/Home/flagGB.svg" alt=""><span>English</span></a></li>
+                                    <br>
                                     <li><a class="dropdown-item grm" href="#"><img class="flag"
-                                                src="./assets/img/Home/germany.svg" alt=""><span> Germany</span></a></li><br>
+                                                src="./assets/img/Home/germany.svg" alt=""><span> Germany</span></a>
+                                    </li><br>
                                     <li><a class="dropdown-item fr" href="#"><img class="flag"
-                                                src="./assets/img/Home/france.svg" alt=""><span> France</span></a></li><br>
+                                                src="./assets/img/Home/france.svg" alt=""><span> France</span></a></li>
+                                    <br>
                                     <li><a class="dropdown-item" href="#"><img class="flag"
-                                                src="./assets/img/Home/russia.svg" alt=""><span> Russia</span></a></li><br>
+                                                src="./assets/img/Home/russia.svg" alt=""><span> Russia</span></a></li>
+                                    <br>
                                     <li><a class="dropdown-item" href="#"><img class="flag"
                                                 src="./assets/img/Home/brat.svg" alt=""><span> Turkey</span></a></li>
 
@@ -59,7 +64,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item left">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="./wishlist.html">
                                     <i class="fa-regular fa-heart"></i> WISHLIST</a>
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-rotate"></i>COMPARE</a>
@@ -101,26 +106,21 @@
                                 </div>
 
                                 <div class="basket">
-                                    <button class="btn btn-primary button-icon">
-                                        <div class="icon-cart">
+                                    <div class="icon-cart">
+                                        <a href="./basket.html">
                                             <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="count-price">
+                                        <div class="count">
+                                            <span>0</span>
                                         </div>
 
-                                        <div class="count-price">
-                                            <div class="count">
-                                                <span>0</span>
-                                            </div>
-
-                                            <div class="price-class">
-                                                <span>$0.00</span>
-                                            </div>
-
+                                        <div class="price-class d-flex">
+                                            <span class="subtotal-bottom">$0.00</span>
                                         </div>
-
-                                    </button>
-
-
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,10 +156,10 @@
                                             <li><a class="dropdown-item" href="./about.html">About</a></li>
                                             <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
                                             <li><a class="dropdown-item" href="./myAccount.html">Account</a></li>
-                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="./basket.html">Cart</a></li>
                                             <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
                                             <li><a class="dropdown-item" href="./product.html">Product Detail</a></li>
-                                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                            <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
                                             <li><a class="dropdown-item" href="./checkout.html">Ckeckout</a></li>
                                         </ul>
                                     </li>
@@ -172,6 +172,22 @@
                     </nav>
                 </div>
 
+            </div>
+
+            <div class="down-navbar">
+                <div class="container">
+                    <div class="navHome">
+                        <div class="left">
+                            <h4>ABOUT</h4>
+                        </div>
+                        <div class="right">
+                            <a href="./home.html">
+                                <h4>HOME </h4>
+                            </a>
+                            <h4> / About</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -305,160 +321,120 @@
             </div>
         </section>
 
-
-        <section id="about-team">
+        <section id="our-experts">
+            <div class="expert">
+                <h2>Our Experts</h2>
+                <p>Our development opt in to the projects they genuinely want to work on,
+                    committing wholeheartedly to delivering.</p>
+            </div>
             <div class="container">
-                <div class="team-title-text">
-                    <h4>Our Experts</h4>
-                    <p>Our development opt in to the projects they genuinely want to work on,
-                        committing wholeheartedly to delivering</p>
-                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
 
-                <div class="teams d-flex">
-                    <div class="col-lg-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/img/Home/t1.jpg" class="card-img-top" alt="...">
-                            <div class="box-sosial">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <h4>Peter Simons</h4>
-                                <p class="card-text">CEO & Founder</p>
+                        <div class="item">
+                            <div class="single-team-member">
+                                <div class="img-box">
+                                    <img src="./assets/img/Home/t1.jpg" alt="">
+                                </div>
+
+                                <div class="box">
+                                    <div class="content ">
+                                        <ul>
+                                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-box">
+                                        <h4>Peter Simons</h4>
+                                        <p>CEO & Founder</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <div class="col-lg-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/img/Home/t2.jpg" class="card-img-top" alt="...">
-                            <div class="box-sosial">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <h4>Peter Simons</h4>
-                                <p class="card-text">CEO & Founder</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
 
-                    <div class="col-lg-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/img/Home/t3.jpg" class="card-img-top" alt="...">
-                            <div class="box-sosial">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="card-body">
-                                <h4>Peter Simons</h4>
-                                <p class="card-text">CEO & Founder</p>
+                        <div class="item">
+                            <div class="single-team-member">
+                                <div class="img-box">
+                                    <img src="./assets/img/Home/t2.jpg" alt="">
+                                </div>
+                                <div class="box">
+                                    <div class="content">
+                                        <ul>
+                                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-box">
+                                        <h4>Peter Simons</h4>
+                                        <p>CEO & Founder</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-lg-3">
-                        <div class="card" style="width: 18rem;">
 
-                            <img src="./assets/img/Home/t4.jpg" class="card-img-top" alt="...">
-                            <div class="box-sosial">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
 
-
-                            </div>
-
-
-
-                            <div class="card-body">
-                                <h4>Peter Simons</h4>
-                                <p class="card-text">CEO & Founder</p>
+                        <div class="item">
+                            <div class="single-team-member">
+                                <div class="img-box">
+                                    <img src="./assets/img/Home/t3.jpg" alt="">
+                                </div>
+                                <div class="box">
+                                    <div class="content ">
+                                        <ul>
+                                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-box">
+                                        <h4>Peter Simons</h4>
+                                        <p>CEO & Founder</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+
+
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="item">
+                            <div class="single-team-member">
+                                <div class="img-box">
+                                    <img src="./assets/img/Home/t4.jpg" alt="">
+                                </div>
+                                <div class="box">
+                                    <div class="content ">
+                                        <ul>
+                                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-box ">
+                                        <h4>Peter Simons</h4>
+                                        <p>CEO & Founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -582,6 +558,10 @@
 
         </section>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://kit.fontawesome.com/b01bc4ce26.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

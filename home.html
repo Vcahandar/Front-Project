@@ -35,13 +35,13 @@
                                     aria-expanded="false">
                                     USD
                                 </a>
-                                <ul class="dropdown-menu ">
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item usd-frst " href="#"><span class="money">USD</span></a>
                                     </li>
                                     <li><a class="dropdown-item eur" href="#"><span class="money">EUR</span></a></li>
                                 </ul>
 
-                                <a class="nav-link dropdown-toggle language test" href="#" role="button"
+                                <a class="nav-link dropdown-toggle language basic" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="flag" src="./assets/img/Home/flagGB.svg" alt=""><span> English</span>
                                 </a>
@@ -72,7 +72,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item left">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="./wishlist.html">
                                     <i class="fa-regular fa-heart"></i> WISHLIST</a>
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-rotate"></i>COMPARE</a>
@@ -115,9 +115,9 @@
 
                                 <div class="basket">
                                     <div class="icon-cart">
-                                       <a href="./basket.html">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                       </a>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
                                     </div>
 
                                     <div class="count-price">
@@ -125,12 +125,10 @@
                                             <span>0</span>
                                         </div>
 
-                                        <div class="price-class">
-                                            <span>$0.00</span>
+                                        <div class="price-class d-flex">
+                                            <span class="subtotal-bottom">$0.00</span>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -166,10 +164,10 @@
                                             <li><a class="dropdown-item" href="./about.html">About</a></li>
                                             <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
                                             <li><a class="dropdown-item" href="./myAccount.html">Account</a></li>
-                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="./basket.html">Cart</a></li>
                                             <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
                                             <li><a class="dropdown-item" href="./product.html">Product Detail</a></li>
-                                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                            <li><a class="dropdown-item" href="./wishlist.html">Wishlist</a></li>
                                             <li><a class="dropdown-item" href="./checkout.html">Ckeckout</a></li>
                                         </ul>
                                     </li>
@@ -292,7 +290,7 @@
                 <div class="navbar-card">
                     <ul class="nav nav-tabs tab-nav" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            <button class="nav-link" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                                 aria-selected="true">FEATURED PRODUCTS</button>
                         </li>
@@ -323,7 +321,7 @@
                                             <div class="slider__item">
                                                 <div class="card" data-id="1" style="width: 16rem;">
                                                     <div class="a">
-                                                        <div class="header-icon ">
+                                                        <div class="header-icon d-none">
                                                             <i class="fa-regular fa-heart"></i>
                                                             <button type="button" class="btn btn-light"
                                                                 data-bs-toggle="modal" data-bs-target="#exampleModal1">
@@ -401,8 +399,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                           <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""> <i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -419,9 +419,9 @@
 
                                             </div>
                                             <div class="slider__item">
-                                                <div class="card"  data-id="2" style="width: 16rem;">
+                                                <div class="card" data-id="2" style="width: 16rem;">
                                                     <div class="a">
-                                                        <div class="header-icon ">
+                                                        <div class="header-icon d-none">
                                                             <i class="fa-regular fa-heart"></i>
                                                             <button type="button" class="btn btn-light"
                                                                 data-bs-toggle="modal" data-bs-target="#exampleModal2">
@@ -599,8 +599,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -791,8 +793,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -888,8 +892,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                           <a href=""> <i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""> <i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -985,8 +991,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -1082,8 +1090,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
 
@@ -1179,8 +1189,10 @@
 
 
                                                                         <div class="icon-modal">
-                                                                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                                                            <a href=""><i class="fa-solid fa-eye"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-cart-shopping"></i></a>
+                                                                            <a href=""><i
+                                                                                    class="fa-solid fa-eye"></i></a>
                                                                         </div>
 
                                                                     </div>

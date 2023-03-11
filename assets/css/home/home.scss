@@ -862,6 +862,10 @@
     .navbar-card {
         margin-top: 30px;
 
+        .active{
+               
+        }
+
         .tab-nav {
             border-bottom: 1px solid #bbb6b6b3;
             --bs-nav-tabs-border-width: none;
@@ -896,7 +900,12 @@
 
         .card {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+            &:hover{
+                .header-icon{
+                    display: flex !important;
+                    
+                }
+            }
 
             &:hover{
                 color: #000;
@@ -925,12 +934,13 @@
                     gap: 10px;
                     text-decoration: none;
                     text-decoration: none;
-                    color: white !important;
+                    color: rgb(10, 10, 10) !important;
+                    cursor: pointer;
 
                     button {
                         border: none;
                         background: white;
-                        color: white;
+                        color: rgb(0, 0, 0);
                         width: 24px;
                         height: 33px;
                         padding: 1px;
@@ -944,9 +954,6 @@
 
                     .rtt {
                         margin-left: 2px;
-
-
-
                     }
                 }
             }

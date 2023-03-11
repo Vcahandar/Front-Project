@@ -279,11 +279,42 @@
 
     }
 
+    .down-navbar{
+        width: 100%;
+        height: 60px;
+        border: 1px solid #f3f3f3;
+        .container {
+            max-width: 100% !important;
+            .navHome{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 15px;
+                .left {
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                }
+                .right {
+                    display: flex;
+                    a {
+                        color: #222;
+                        text-decoration: none;
+                    }
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
 }
-
 
 #basket-main {
 
@@ -302,6 +333,7 @@
                     &:first-child {
                         background-color: #f33927 !important;
                         font-weight: 600;
+
 
                     }
                 }
@@ -324,10 +356,11 @@
             }
 
             .table {
+                user-select: none;
                 font-family: 'Roboto', sans-serif;
                 box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
-                tr{
+                tr {
                     text-align: center;
                 }
 
@@ -352,19 +385,20 @@
                     text-align: center;
                 }
 
-                .td-price{
+                .td-price {
                     font-size: 23px;
                     font-weight: 600;
                     padding-top: 27px;
                 }
 
-                .td-count{
+                .td-count {
 
                     padding-top: 18px;
+
                     .number {
                         margin: 0;
                     }
-    
+
                     .minus,
                     .plus {
                         cursor: pointer;
@@ -375,7 +409,7 @@
                         vertical-align: middle;
                         text-align: center;
                     }
-    
+
                     input {
                         height: 34px;
                         width: 80px;
@@ -385,21 +419,54 @@
                         border-radius: 4px;
                         display: inline-block;
                         vertical-align: middle;
-    
+
                     }
                 }
 
-                .td-total{
+                .td-total {
                     padding-top: 31px;
                     font-size: 23px;
                     font-weight: 600;
                     color: #f33927;
                 }
 
-                .delete{
+                .delete {
                     padding-top: 30px;
                     font-size: 27px;
                     cursor: pointer;
+                }
+
+
+            }
+
+            .total-continue {
+                display: flex;
+                justify-content: space-between;
+
+                .backShop {
+
+                    .btn {
+                        font-weight: 800;
+                        color: white;
+                        background-color: #ef6c00;
+                        height: 55px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                }
+
+                .total {
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    .btn {
+                        font-weight: 800;
+                        color: white;
+                        background-color: #ef6c00;
+                        height: 55px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
                 }
             }
 

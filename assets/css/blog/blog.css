@@ -129,10 +129,6 @@
   margin-left: 25px;
   margin-bottom: 13px;
 }
-#myNavbar .navDown .text-basket .basket .button-icon {
-  background-color: #ef6c00;
-  border: none;
-}
 #myNavbar .navDown .text-basket .basket .icon-cart {
   position: absolute;
 }
@@ -150,19 +146,23 @@
   border-radius: 50%;
 }
 #myNavbar .navDown .text-basket .basket .count-price span {
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
-  bottom: 5px;
-  right: 1px;
+  bottom: 1px;
+  color: white;
+  right: -3px;
 }
 #myNavbar .navDown .text-basket .basket .count-price .price-class {
   left: 9px;
   position: relative;
   bottom: 4px;
+  color: white;
+  top: 7px;
 }
 #myNavbar .navDown .text-basket .basket .count-price .price-class span {
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
 }
 #myNavbar .secondNav {
   background-color: #f3f3f3;
@@ -182,39 +182,36 @@
   font-size: 15px;
   font-weight: 600;
 }
-#myNavbar .about-navbar {
+#myNavbar .down-navbar {
   width: 100%;
   height: 60px;
   border: 1px solid #f3f3f3;
 }
-#myNavbar .about-navbar .container {
+#myNavbar .down-navbar .container {
   max-width: 100% !important;
 }
-#myNavbar .about-navbar .container .navAbout {
+#myNavbar .down-navbar .container .navHome {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px;
 }
-#myNavbar .about-navbar .container .navAbout .left h4 {
+#myNavbar .down-navbar .container .navHome .left h4 {
   text-transform: uppercase;
   font-size: 14px;
 }
-#myNavbar .about-navbar .container .navAbout .right {
+#myNavbar .down-navbar .container .navHome .right {
   display: flex;
 }
-#myNavbar .about-navbar .container .navAbout .right a {
+#myNavbar .down-navbar .container .navHome .right a {
   color: #222;
   text-decoration: none;
 }
-#myNavbar .about-navbar .container .navAbout .right h4 {
+#myNavbar .down-navbar .container .navHome .right h4 {
   text-transform: uppercase;
   font-size: 14px;
 }
 
-#main .container {
-  max-width: 1300px;
-}
 #main .about {
   display: flex;
   width: 100%;
@@ -253,6 +250,9 @@
   width: 100%;
 }
 
+#img-text .container {
+  max-width: 1300px;
+}
 #img-text .textss1 .img1 {
   margin-top: 60px;
 }
@@ -465,6 +465,7 @@
   width: 340px;
   border: none;
   border: 1px solid rgb(219, 217, 217);
+  outline: none;
 }
 #img-text .search-icon .icon i {
   padding-top: 18px;
