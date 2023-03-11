@@ -191,34 +191,88 @@ cardBtns.forEach(btn => {
     e.preventDefault();
 
     let productImg = this.parentNode.previousElementSibling.lastElementChild.firstElementChild.getAttribute("src")
-    let productName= this.previousElementSibling.previousElementSibling.innerText;
+    let productName = this.previousElementSibling.previousElementSibling.innerText;
     let productId = parseInt(this.parentNode.parentNode.getAttribute("data-id"))
+    let productPrice = parseInt(this.previousElementSibling.lastElementChild.lastElementChild.innerText)
 
     let existProduct=products.find(m=>m.id==productId)
 
     if(existProduct!=undefined){
       existProduct.count+=1;
+      
     }
     else{
       products.push({
         id:productId,
         name:productName,
         img:productImg,
+        price:productPrice,
         count:1,
       })
 
     }
-
     localStorage.setItem("basket",JSON.stringify(products))
-   
-   
+
+    getBasketCount(products)
   })
   
 });
 
 
-  
+
+function getBasketCount(arr){
+  document.querySelector(".count span").innerText=arr.length
+}
+
+getBasketCount(products)
+
+
   
 
 
   
+
+
+
+// -------------------wishlist-------------------
+
+// let cardWshlst =document.querySelectorAll("#cards .slider .slider__item .header-icon button")
+// console.log(cardWshlst);
+
+// let wishlists=[];
+
+// if(localStorage.getItem("basket")!=null){
+//   products=JSON.parse(localStorage.getItem("basket"))
+// }
+
+
+
+// wishlists.forEach(btn => {
+//   btn.addEventListener("click",function(e){
+//     e.preventDefault();
+
+//     let productImg = this.parentNode.previousElementSibling.lastElementChild.firstElementChild.getAttribute("src")
+//     let productName= this.previousElementSibling.previousElementSibling.innerText;
+//     let productId = parseInt(this.parentNode.parentNode.getAttribute("data-id"))
+
+//     let existProduct=products.find(m=>m.id==productId)
+
+//     if(existProduct!=undefined){
+//       existProduct.count+=1;
+//     }
+//     else{
+//       products.push({
+//         id:productId,
+//         name:productName,
+//         img:productImg,
+//         count:1,
+//       })
+
+//     }
+//     localStorage.setItem("basket",JSON.stringify(products))
+//   })
+  
+// });
+
+
+

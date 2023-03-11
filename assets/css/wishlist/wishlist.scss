@@ -284,7 +284,6 @@
 
 }
 
-
 #basket-main {
 
     .container {
@@ -324,82 +323,16 @@
             }
 
             .table {
-                font-family: 'Roboto', sans-serif;
                 box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
-                tr{
-                    text-align: center;
-                }
 
 
                 .prdct-img {
-                    width: 110px;
-                    height: 110px;
+                    width: 70px;
+                    height: 70px;
 
                     img {
                         width: 100%;
                     }
-                }
-
-                .td-img {
-                    width: 95px;
-                }
-
-                .td-name {
-                    padding-top: 30px;
-                    width: 184px;
-                    font-weight: 700;
-                    text-align: center;
-                }
-
-                .td-price{
-                    font-size: 23px;
-                    font-weight: 600;
-                    padding-top: 27px;
-                }
-
-                .td-count{
-
-                    padding-top: 18px;
-                    .number {
-                        margin: 0;
-                    }
-    
-                    .minus,
-                    .plus {
-                        cursor: pointer;
-                        width: 20px;
-                        height: 55px;
-                        font-size: 35px;
-                        display: inline-block;
-                        vertical-align: middle;
-                        text-align: center;
-                    }
-    
-                    input {
-                        height: 34px;
-                        width: 80px;
-                        text-align: center;
-                        font-size: 17px;
-                        border: 1px solid #ddd;
-                        border-radius: 4px;
-                        display: inline-block;
-                        vertical-align: middle;
-    
-                    }
-                }
-
-                .td-total{
-                    padding-top: 31px;
-                    font-size: 23px;
-                    font-weight: 600;
-                    color: #f33927;
-                }
-
-                .delete{
-                    padding-top: 30px;
-                    font-size: 27px;
-                    cursor: pointer;
                 }
             }
 
@@ -411,8 +344,13 @@
 
 
 
-#footer {
 
+
+
+
+
+
+#footer {
 
     width: 100%;
     background-color: #f7f7f7;

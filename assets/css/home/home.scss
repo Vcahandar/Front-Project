@@ -897,6 +897,21 @@
         .card {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
+
+            &:hover{
+                color: #000;
+
+
+                .header-icon{
+
+
+                    i{
+                        &:hover{
+                            color: #ef6c00;
+                        }
+                    }
+                }
+            }
             .a{
                 text-decoration: none;
 
@@ -910,12 +925,12 @@
                     gap: 10px;
                     text-decoration: none;
                     text-decoration: none;
-                    color: black;
+                    color: white !important;
 
                     button {
                         border: none;
                         background: white;
-                        color: black;
+                        color: white;
                         width: 24px;
                         height: 33px;
                         padding: 1px;
@@ -944,12 +959,6 @@
 
             .card-body {
                 font-family: 'Roboto', sans-serif;
-
-                :hover {
-                    a {
-                        background-color: #eee;
-                    }
-                }
 
                 p {
                     color: gray;
