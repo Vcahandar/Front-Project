@@ -862,9 +862,7 @@
     .navbar-card {
         margin-top: 30px;
 
-        .active{
-               
-        }
+
 
         .tab-nav {
             border-bottom: 1px solid #bbb6b6b3;
@@ -908,7 +906,7 @@
             }
 
             &:hover{
-                color: #000;
+            
 
 
                 .header-icon{
@@ -1000,10 +998,15 @@
 
 
                 a {
-                    :hover {
-                        background-color: #333 !important;
 
+                    &:hover{
+                        border: 1px solid #ef6c00;
+                        color: #ef6c00;
+                        background-color: white !important;
+
+                    
                     }
+
                 }
 
                 .mybtn {

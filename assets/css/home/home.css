@@ -628,9 +628,6 @@
 #cards .fade .card:hover .header-icon {
   display: flex !important;
 }
-#cards .fade .card:hover {
-  color: #000;
-}
 #cards .fade .card:hover .header-icon i:hover {
   color: #ef6c00;
 }
@@ -695,8 +692,10 @@
   font-size: 20px;
   font-weight: 700;
 }
-#cards .fade .card .card-body a :hover {
-  background-color: #333 !important;
+#cards .fade .card .card-body a:hover {
+  border: 1px solid #ef6c00;
+  color: #ef6c00;
+  background-color: white !important;
 }
 #cards .fade .card .card-body .mybtn {
   margin-top: 20px;
